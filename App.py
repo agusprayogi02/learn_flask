@@ -1,6 +1,8 @@
 from flask import Flask, render_template, redirect, request
+from flaskext.mysql import MySQL
 
 App = Flask(__name__)
+mysql = MySQL()
 
 
 @App.route('/')
